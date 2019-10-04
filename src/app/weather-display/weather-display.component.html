@@ -1,0 +1,14 @@
+<mat-card *ngIf='this.response' class='card' [style.backgroundColor]="'white'">
+  <mat-card-title>	{{ this.response.timezone }} </mat-card-title>
+  <mat-card-subtitle class='card'>
+    <p>{{this.time}}</p>
+    <div>
+      <sc-skycons [weather]="this.data.icon" [color]="'#eba687'"></sc-skycons>
+    </div>
+    <p>{{this.data.summary}}</p>
+    <p>{{this.data.temperature}}°F</p>
+</mat-card-subtitle>
+</mat-card>
+<mat-card *ngIf='!this.response' class='card' [style.backgroundColor]="'white'">
+  <h2> Loading data... </h2>
+</mat-card>

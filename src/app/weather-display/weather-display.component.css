@@ -1,0 +1,11 @@
+.card {
+  color: black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  font-family: 'Playfair Display', serif;
+}
